@@ -5,45 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Digital Deepshika | SEO & Digital Marketing Professional</title>
+
     <meta name="description" content="Digital Deepshika shares practical insights on SEO, digital marketing, content strategy, AI tools, website optimization, and online growth.">
+
     <meta name="keywords" content="Digital Deepshika, SEO, digital marketing, SEO professional, content marketing, AI tools, website optimization, SEO tips, digital marketing strategies">
+
     <meta name="author" content="Deepshika Saini">
+
     <meta name="robots" content="index, follow, max-image-preview:large">
+
     <link rel="canonical" href="https://digitaldeepshika.com/">
     <link rel="icon" href="/favicon.ico">
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Digital Deepshika | SEO & Digital Marketing Professional">
     <meta property="og:description" content="Explore SEO, digital marketing, content strategy, AI tools, and website optimization insights with Digital Deepshika.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://digitaldeepshika.com/">
     <meta property="og:image" content="https://digitaldeepshika.com/images/digital-deepshika.jpg">
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Digital Deepshika | SEO & Digital Marketing">
     <meta name="twitter:description" content="Learn SEO, digital marketing, content strategy, AI tools, and website optimization with Digital Deepshika.">
 
+    <!-- Person Schema -->
     <script type="application/ld+json">
     {
-      "@context":"https://schema.org",
-      "@type":"Person",
-      "name":"Deepshika Saini",
-      "url":"https://digitaldeepshika.com/",
-      "jobTitle":"SEO & Digital Marketing Professional",
-      "description":"Digital marketing and SEO professional sharing practical insights about SEO, content marketing, AI tools and website optimization.",
-      "knowsAbout":["Search Engine Optimization","Digital Marketing","Content Marketing","AI Tools","Website Optimization","Content Strategy"]
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Deepshika Saini",
+        "url": "https://digitaldeepshika.com/",
+        "jobTitle": "SEO & Digital Marketing Professional",
+        "description": "Digital marketing and SEO professional sharing practical insights about SEO, content marketing, AI tools and website optimization.",
+        "knowsAbout": [
+            "Search Engine Optimization",
+            "Digital Marketing",
+            "Content Marketing",
+            "AI Tools",
+            "Website Optimization",
+            "Content Strategy"
+        ]
     }
     </script>
 
+    <!-- Website Schema -->
     <script type="application/ld+json">
     {
-      "@context":"https://schema.org",
-      "@type":"WebSite",
-      "name":"Digital Deepshika",
-      "url":"https://digitaldeepshika.com/"
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Digital Deepshika",
+        "url": "https://digitaldeepshika.com/"
     }
     </script>
 
     <style>
+
         :root {
             --primary: #6c4df6;
             --primary-dark: #4f35c5;
@@ -59,26 +76,39 @@
             --shadow: 0 18px 50px rgba(48, 35, 103, .10);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
 
         body {
-            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+                BlinkMacSystemFont, "Segoe UI", sans-serif;
             line-height: 1.7;
             color: var(--dark);
             background: #fff;
             overflow-x: hidden;
         }
 
-        a { text-decoration: none; color: inherit; }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
         .container {
             width: min(1120px, 90%);
             margin: auto;
         }
 
-        /* Header */
+        /* =========================
+           HEADER
+        ========================== */
+
         header {
             position: sticky;
             top: 0;
@@ -101,14 +131,21 @@
             font-size: 24px;
             font-weight: 850;
             letter-spacing: -.7px;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
+            background: linear-gradient(
+                135deg,
+                var(--primary),
+                var(--accent)
+            );
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             white-space: nowrap;
         }
 
-        .logo span { color: var(--dark); font-weight: 500; }
+        .logo span {
+            color: var(--dark);
+            font-weight: 500;
+        }
 
         nav ul {
             list-style: none;
@@ -133,7 +170,10 @@
             transform: translateY(-1px);
         }
 
-        /* Hero */
+        /* =========================
+           HERO
+        ========================== */
+
         .hero {
             position: relative;
             min-height: 650px;
@@ -141,11 +181,28 @@
             align-items: center;
             padding: 95px 0 110px;
             overflow: hidden;
+
             background:
-                radial-gradient(circle at 10% 15%, rgba(108,77,246,.17), transparent 28%),
-                radial-gradient(circle at 90% 20%, rgba(0,201,167,.16), transparent 25%),
-                radial-gradient(circle at 70% 90%, rgba(255,107,157,.13), transparent 27%),
-                linear-gradient(135deg, #faf9ff 0%, #f5fbff 100%);
+                radial-gradient(
+                    circle at 10% 15%,
+                    rgba(108,77,246,.17),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(0,201,167,.16),
+                    transparent 25%
+                ),
+                radial-gradient(
+                    circle at 70% 90%,
+                    rgba(255,107,157,.13),
+                    transparent 27%
+                ),
+                linear-gradient(
+                    135deg,
+                    #faf9ff 0%,
+                    #f5fbff 100%
+                );
         }
 
         .hero::before,
@@ -211,7 +268,15 @@
 
         .hero h1 .gradient-text {
             display: block;
-            background: linear-gradient(90deg, var(--primary), #9b5cff 45%, var(--accent));
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--primary),
+                    #9b5cff 45%,
+                    var(--accent)
+                );
+
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -235,11 +300,22 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
+
             padding: 14px 21px;
             border-radius: 13px;
+
             color: #fff;
-            background: linear-gradient(135deg, var(--primary), #8c62ff);
-            box-shadow: 0 12px 28px rgba(108,77,246,.25);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary),
+                    #8c62ff
+                );
+
+            box-shadow:
+                0 12px 28px rgba(108,77,246,.25);
+
             font-weight: 800;
             transition: .25s ease;
             border: 1px solid transparent;
@@ -247,27 +323,43 @@
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 16px 34px rgba(108,77,246,.31);
+
+            box-shadow:
+                0 16px 34px rgba(108,77,246,.31);
         }
 
         .btn.secondary {
             color: var(--dark);
             background: rgba(255,255,255,.75);
             border-color: var(--border);
-            box-shadow: 0 8px 25px rgba(48,35,103,.07);
+
+            box-shadow:
+                0 8px 25px rgba(48,35,103,.07);
         }
 
-        .btn.secondary:hover { color: var(--primary); }
+        .btn.secondary:hover {
+            color: var(--primary);
+        }
+
+        /* =========================
+           HERO CARD
+        ========================== */
 
         .hero-card {
             position: relative;
             min-height: 390px;
             padding: 28px;
+
             border: 1px solid rgba(255,255,255,.75);
             border-radius: 30px;
+
             background: rgba(255,255,255,.66);
+
             backdrop-filter: blur(18px);
-            box-shadow: 0 30px 80px rgba(65,47,132,.15);
+
+            box-shadow:
+                0 30px 80px rgba(65,47,132,.15);
+
             transform: rotate(2deg);
         }
 
@@ -275,9 +367,19 @@
             height: 100%;
             min-height: 334px;
             padding: 28px;
+
             border-radius: 23px;
-            background: linear-gradient(145deg, #ffffff, #f2efff);
-            border: 1px solid rgba(108,77,246,.10);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #ffffff,
+                    #f2efff
+                );
+
+            border:
+                1px solid rgba(108,77,246,.10);
+
             transform: rotate(-2deg);
         }
 
@@ -300,18 +402,38 @@
 
         .mini-card {
             padding: 18px 15px;
+
             border-radius: 17px;
+
             background: #fff;
             border: 1px solid var(--border);
-            box-shadow: 0 8px 25px rgba(48,35,103,.06);
+
+            box-shadow:
+                0 8px 25px rgba(48,35,103,.06);
         }
 
-        .mini-card .icon { font-size: 25px; margin-bottom: 8px; }
-        .mini-card strong { display: block; font-size: 14px; }
-        .mini-card span { font-size: 12px; color: var(--muted); }
+        .mini-card .icon {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
 
-        /* Sections */
-        section { padding: 95px 0; }
+        .mini-card strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .mini-card span {
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================== */
+
+        section {
+            padding: 95px 0;
+        }
 
         .section-title {
             max-width: 750px;
@@ -323,6 +445,7 @@
             display: inline-block;
             margin-bottom: 10px;
             color: var(--primary);
+
             font-size: 13px;
             font-weight: 900;
             letter-spacing: 1.5px;
@@ -336,9 +459,14 @@
             margin-bottom: 13px;
         }
 
-        .section-title p { color: var(--muted); }
+        .section-title p {
+            color: var(--muted);
+        }
 
-        /* About */
+        /* =========================
+           ABOUT
+        ========================== */
+
         .about-wrap {
             display: grid;
             grid-template-columns: .75fr 1.25fr;
@@ -350,21 +478,47 @@
             min-height: 270px;
             border-radius: 30px;
             padding: 35px;
+
             color: #fff;
-            background: linear-gradient(145deg, #6c4df6, #9a5cff 55%, #ff6b9d);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #6c4df6,
+                    #9a5cff 55%,
+                    #ff6b9d
+                );
+
             box-shadow: var(--shadow);
+
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
-        .about-badge .big { font-size: 58px; font-weight: 900; line-height: 1; }
-        .about-badge p { margin-top: 12px; opacity: .9; }
+        .about-badge .big {
+            font-size: 58px;
+            font-weight: 900;
+            line-height: 1;
+        }
 
-        .about-content p { color: var(--text); margin-bottom: 18px; }
+        .about-badge p {
+            margin-top: 12px;
+            opacity: .9;
+        }
 
-        /* Services */
-        #expertise { background: #faf9ff; }
+        .about-content p {
+            color: var(--text);
+            margin-bottom: 18px;
+        }
+
+        /* =========================
+           EXPERTISE
+        ========================== */
+
+        #expertise {
+            background: #faf9ff;
+        }
 
         .services-grid {
             display: grid;
@@ -375,393 +529,1171 @@
         .service-card {
             position: relative;
             overflow: hidden;
+
             padding: 28px;
             border-radius: 21px;
+
             background: #fff;
             border: 1px solid var(--border);
-            box-shadow: 0 10px 35px rgba(48,35,103,.06);
+
+            box-shadow:
+                0 10px 35px rgba(48,35,103,.06);
+
             transition: .3s ease;
         }
 
         .service-card::before {
             content: "";
+
             position: absolute;
+
             width: 90px;
             height: 90px;
+
             right: -35px;
             top: -35px;
+
             border-radius: 50%;
-            background: rgba(108,77,246,.08);
+
+            background:
+                rgba(108,77,246,.08);
         }
 
         .service-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 22px 50px rgba(48,35,103,.12);
-            border-color: rgba(108,77,246,.25);
+
+            box-shadow:
+                0 22px 50px rgba(48,35,103,.12);
+
+            border-color:
+                rgba(108,77,246,.25);
         }
 
         .service-icon {
             width: 48px;
             height: 48px;
+
             display: grid;
             place-items: center;
+
             border-radius: 14px;
+
             margin-bottom: 19px;
-            background: linear-gradient(135deg, #eee9ff, #e3fff8);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eee9ff,
+                    #e3fff8
+                );
+
             font-size: 22px;
         }
 
-        .service-card h3 { font-size: 19px; margin-bottom: 9px; }
-        .service-card p { color: var(--muted); font-size: 14px; }
-
-        /* Topics */
-        .topics { background: linear-gradient(180deg, #fff, #f7fbff); }
-
-        .topic-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
-            max-width: 920px;
-            margin: auto;
-        }
-
-        .topic {
-            display: flex;
-            gap: 17px;
-            padding: 23px;
-            border-radius: 18px;
-            background: #fff;
-            border: 1px solid var(--border);
-            box-shadow: 0 8px 28px rgba(48,35,103,.05);
-            transition: .25s ease;
-        }
-
-        .topic:hover { transform: translateX(5px); border-color: rgba(0,201,167,.3); }
-
-        .topic-icon {
-            flex: 0 0 43px;
-            height: 43px;
-            display: grid;
-            place-items: center;
-            border-radius: 12px;
-            background: #eafff9;
+        .service-card h3 {
             font-size: 19px;
+            margin-bottom: 9px;
         }
 
-        .topic h3 { font-size: 17px; margin-bottom: 5px; }
-        .topic p { color: var(--muted); font-size: 13px; }
+        .service-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
 
-        /* CTA */
+        /* =========================
+           BLOG
+        ========================== */
+
+        .blog-section {
+            background:
+                linear-gradient(
+                    180deg,
+                    #fff,
+                    #f7fbff
+                );
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .blog-card {
+            position: relative;
+            overflow: hidden;
+
+            display: flex;
+            flex-direction: column;
+
+            border-radius: 22px;
+
+            background: #fff;
+
+            border:
+                1px solid var(--border);
+
+            box-shadow:
+                0 10px 35px rgba(48,35,103,.06);
+
+            transition: .3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 22px 50px rgba(48,35,103,.13);
+
+            border-color:
+                rgba(108,77,246,.25);
+        }
+
+        .blog-image {
+            min-height: 170px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 55px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eee9ff,
+                    #e3fff8
+                );
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-category {
+            display: inline-block;
+
+            margin-bottom: 10px;
+
+            padding: 5px 10px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(108,77,246,.09);
+
+            color:
+                var(--primary);
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: .8px;
+        }
+
+        .blog-card h3 {
+            font-size: 20px;
+            line-height: 1.35;
+
+            margin-bottom: 10px;
+        }
+
+        .blog-card p {
+            color: var(--muted);
+            font-size: 14px;
+
+            margin-bottom: 18px;
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+
+            color: var(--primary);
+
+            font-size: 14px;
+            font-weight: 800;
+
+            transition: .2s ease;
+        }
+
+        .read-more:hover {
+            color: var(--accent);
+            transform: translateX(4px);
+        }
+
+        /* =========================
+           CTA
+        ========================== */
+
         .cta {
             position: relative;
             overflow: hidden;
+
             text-align: center;
+
             color: #fff;
+
             background:
-                radial-gradient(circle at 20% 20%, rgba(0,201,167,.35), transparent 25%),
-                radial-gradient(circle at 80% 80%, rgba(255,107,157,.35), transparent 25%),
-                linear-gradient(135deg, #4e35bd, #713fe8 50%, #a347b8);
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(0,201,167,.35),
+                    transparent 25%
+                ),
+                radial-gradient(
+                    circle at 80% 80%,
+                    rgba(255,107,157,.35),
+                    transparent 25%
+                ),
+                linear-gradient(
+                    135deg,
+                    #4e35bd,
+                    #713fe8 50%,
+                    #a347b8
+                );
         }
 
         .cta::before {
             content: "";
+
             position: absolute;
+
             width: 280px;
             height: 280px;
-            border: 1px solid rgba(255,255,255,.16);
+
+            border:
+                1px solid rgba(255,255,255,.16);
+
             border-radius: 50%;
+
             left: -100px;
             top: -100px;
         }
 
-        .cta .container { position: relative; z-index: 1; }
-        .cta h2 { font-size: clamp(30px, 5vw, 46px); letter-spacing: -1.3px; }
-        .cta p { max-width: 680px; margin: 14px auto 28px; color: rgba(255,255,255,.82); }
+        .cta .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta h2 {
+            font-size: clamp(30px, 5vw, 46px);
+            letter-spacing: -1.3px;
+        }
+
+        .cta p {
+            max-width: 680px;
+            margin: 14px auto 28px;
+            color: rgba(255,255,255,.82);
+        }
 
         .cta .btn {
             color: var(--primary-dark);
             background: #fff;
-            box-shadow: 0 12px 35px rgba(0,0,0,.18);
+
+            box-shadow:
+                0 12px 35px rgba(0,0,0,.18);
         }
 
-        .cta .btn:hover { color: var(--primary); }
+        .cta .btn:hover {
+            color: var(--primary);
+        }
 
-        /* Footer */
+        /* =========================
+           FOOTER
+        ========================== */
+
         footer {
             padding: 30px 0;
+
             text-align: center;
+
             color: var(--muted);
+
             background: #111025;
         }
 
-        footer p { font-size: 13px; }
-        footer strong { color: #fff; }
-
-        /* Entrance animations */
-        @keyframes float {
-            0%,100% { transform: translateY(0) rotate(2deg); }
-            50% { transform: translateY(-9px) rotate(2deg); }
+        footer p {
+            font-size: 13px;
         }
 
-        .hero-card { animation: float 5s ease-in-out infinite; }
+        footer strong {
+            color: #fff;
+        }
+
+        /* =========================
+           ANIMATION
+        ========================== */
+
+        @keyframes float {
+
+            0%,100% {
+                transform:
+                    translateY(0)
+                    rotate(2deg);
+            }
+
+            50% {
+                transform:
+                    translateY(-9px)
+                    rotate(2deg);
+            }
+        }
+
+        .hero-card {
+            animation:
+                float 5s ease-in-out infinite;
+        }
 
         @media (prefers-reduced-motion: reduce) {
-            html { scroll-behavior: auto; }
-            *, *::before, *::after { animation: none !important; transition: none !important; }
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
         }
 
-        /* Mobile */
+        /* =========================
+           TABLET
+        ========================== */
+
         @media (max-width: 900px) {
-            .hero-grid, .about-wrap { grid-template-columns: 1fr; }
-            .hero-grid { gap: 45px; }
-            .hero-card { max-width: 600px; width: 100%; margin: auto; }
-            .services-grid { grid-template-columns: repeat(2, 1fr); }
+
+            .hero-grid,
+            .about-wrap {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-grid {
+                gap: 45px;
+            }
+
+            .hero-card {
+                max-width: 600px;
+                width: 100%;
+                margin: auto;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
+
+        /* =========================
+           MOBILE
+        ========================== */
 
         @media (max-width: 680px) {
+
             .navbar {
                 padding: 13px 0;
                 flex-direction: column;
                 gap: 8px;
             }
 
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 2px; }
-            nav a { padding: 7px 9px; font-size: 12px; }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2px;
+            }
 
-            .hero { padding: 65px 0 80px; min-height: auto; }
-            .hero h1 { font-size: 43px; letter-spacing: -1.8px; }
-            .hero p { font-size: 16px; }
+            nav a {
+                padding: 7px 9px;
+                font-size: 12px;
+            }
 
-            .buttons .btn { width: 100%; }
-            .hero-card { min-height: auto; padding: 16px; }
-            .hero-card-inner { min-height: auto; padding: 22px; }
+            .hero {
+                padding: 65px 0 80px;
+                min-height: auto;
+            }
 
-            section { padding: 70px 0; }
-            .services-grid, .topic-list { grid-template-columns: 1fr; }
+            .hero h1 {
+                font-size: 43px;
+                letter-spacing: -1.8px;
+            }
 
-            .about-badge { min-height: 220px; }
+            .hero p {
+                font-size: 16px;
+            }
+
+            .buttons .btn {
+                width: 100%;
+            }
+
+            .hero-card {
+                min-height: auto;
+                padding: 16px;
+            }
+
+            .hero-card-inner {
+                min-height: auto;
+                padding: 22px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .services-grid,
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-badge {
+                min-height: 220px;
+            }
+
+            .blog-image {
+                min-height: 150px;
+            }
         }
+
     </style>
 </head>
 
 <body>
+
+<!-- =========================
+     HEADER
+========================== -->
+
 <header>
+
     <div class="container navbar">
-        <a class="logo" href="#home" aria-label="Digital Deepshika Home">
+
+        <a
+            class="logo"
+            href="index.html"
+            aria-label="Digital Deepshika Home"
+        >
             Digital <span>Deepshika</span>
         </a>
 
         <nav aria-label="Main Navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="expertise.html">Expertise</a></li>
-        <li><a href="topics.html">Topics</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="expertise.html">Expertise</a>
+                </li>
+
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
     </div>
+
 </header>
 
-<main>
-    <section class="hero" id="home">
-        <div class="container hero-grid">
-            <div>
-                <span class="eyebrow">SEO • Digital Marketing • AI</span>
 
-                <h1>
-                    Digital Deepshika:
-                    <span class="gradient-text">Grow Your Digital Skills</span>
-                </h1>
+<main>
+
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                SEO • Digital Marketing • AI
+            </span>
+
+            <h1>
+
+                Digital Deepshika:
+
+                <span class="gradient-text">
+                    Grow Your Digital Skills
+                </span>
+
+            </h1>
+
+            <p>
+                Practical insights on SEO, digital marketing,
+                content strategy, AI tools, website optimization,
+                and modern online growth — explained simply and clearly.
+            </p>
+
+            <div class="buttons">
+
+                <a href="expertise.html" class="btn">
+                    Explore Expertise →
+                </a>
+
+                <a href="about.html" class="btn secondary">
+                    Discover More
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="hero-card"
+            aria-label="Digital marketing expertise"
+        >
+
+            <div class="hero-card-inner">
+
+                <h3>
+                    Build. Optimize. Grow. ✨
+                </h3>
 
                 <p>
-                    Practical insights on SEO, digital marketing, content strategy,
-                    AI tools, website optimization, and modern online growth —
-                    explained simply and clearly.
+                    Explore the core areas covered by Digital Deepshika.
                 </p>
 
-                <div class="buttons">
-                    <a href="#expertise" class="btn">Explore Expertise →</a>
-                    <a href="#about" class="btn secondary">Discover More</a>
-                </div>
-            </div>
 
-            <div class="hero-card" aria-label="Digital marketing expertise">
-                <div class="hero-card-inner">
-                    <h3>Build. Optimize. Grow. ✨</h3>
-                    <p>Explore the core areas covered by Digital Deepshika.</p>
+                <div class="mini-grid">
 
-                    <div class="mini-grid">
-                        <div class="mini-card">
-                            <div class="icon">🔎</div>
-                            <strong>SEO</strong>
-                            <span>Search visibility</span>
+                    <div class="mini-card">
+
+                        <div class="icon">
+                            🔎
                         </div>
-                        <div class="mini-card">
-                            <div class="icon">✍️</div>
-                            <strong>Content</strong>
-                            <span>Useful content</span>
+
+                        <strong>
+                            SEO
+                        </strong>
+
+                        <span>
+                            Search visibility
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-card">
+
+                        <div class="icon">
+                            ✍️
                         </div>
-                        <div class="mini-card">
-                            <div class="icon">🤖</div>
-                            <strong>AI Tools</strong>
-                            <span>Smarter workflows</span>
+
+                        <strong>
+                            Content
+                        </strong>
+
+                        <span>
+                            Useful content
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-card">
+
+                        <div class="icon">
+                            🤖
                         </div>
-                        <div class="mini-card">
-                            <div class="icon">🚀</div>
-                            <strong>Growth</strong>
-                            <span>Online presence</span>
+
+                        <strong>
+                            AI Tools
+                        </strong>
+
+                        <span>
+                            Smarter workflows
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-card">
+
+                        <div class="icon">
+                            🚀
                         </div>
+
+                        <strong>
+                            Growth
+                        </strong>
+
+                        <span>
+                            Online presence
+                        </span>
+
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="about">
-        <div class="container">
-            <div class="section-title">
-                <span class="section-kicker">About</span>
-                <h2>Practical Knowledge for Digital Growth</h2>
-                <p>Simple explanations, useful strategies, and modern digital insights.</p>
-            </div>
-
-            <div class="about-wrap">
-                <div class="about-badge">
-                    <span class="big">01</span>
-                    <h3>Learn With Purpose</h3>
-                    <p>Turn digital marketing concepts into practical knowledge you can use.</p>
                 </div>
 
-                <div class="about-content">
-                    <p>
-                        Digital Deepshika focuses on sharing useful and easy-to-understand
-                        information about search engine optimization, digital marketing,
-                        content creation, and modern web technologies.
-                    </p>
-                    <p>
-                        The goal is to make digital marketing concepts easier to understand
-                        and provide practical ideas that can be applied to websites,
-                        content, and online businesses.
-                    </p>
-                    <p>
-                        From SEO basics to AI-powered tools and website optimization,
-                        Digital Deepshika brings together helpful resources for people
-                        interested in growing their digital skills and online presence.
-                    </p>
-                </div>
             </div>
+
         </div>
-    </section>
 
-    <section id="expertise">
-        <div class="container">
-            <div class="section-title">
-                <span class="section-kicker">Expertise</span>
-                <h2>Digital Marketing & SEO Expertise</h2>
-                <p>Explore the key areas of digital marketing and website growth covered here.</p>
-            </div>
+    </div>
 
-            <div class="services-grid">
-                <article class="service-card">
-                    <div class="service-icon">🔎</div>
-                    <h3>Search Engine Optimization</h3>
-                    <p>Learn about on-page SEO, technical SEO, keyword research, meta tags, internal linking, schema markup, and off-page SEO.</p>
-                </article>
+</section>
 
-                <article class="service-card">
-                    <div class="service-icon">✍️</div>
-                    <h3>Content Marketing</h3>
-                    <p>Discover content planning, keyword-focused writing, website content optimization, and useful content strategies.</p>
-                </article>
 
-                <article class="service-card">
-                    <div class="service-icon">🤖</div>
-                    <h3>AI Tools & Technology</h3>
-                    <p>Explore AI tools, chatbots, automation, and emerging technologies that support modern marketing workflows.</p>
-                </article>
+<!-- =========================
+     ABOUT
+========================== -->
 
-                <article class="service-card">
-                    <div class="service-icon">⚡</div>
-                    <h3>Website Optimization</h3>
-                    <p>Learn how to improve website structure, user experience, performance, mobile usability, and search visibility.</p>
-                </article>
+<section id="about">
 
-                <article class="service-card">
-                    <div class="service-icon">🎯</div>
-                    <h3>Keyword Research</h3>
-                    <p>Understand search intent, keyword selection, long-tail keywords, keyword mapping, and search-focused content.</p>
-                </article>
+    <div class="container">
 
-                <article class="service-card">
-                    <div class="service-icon">🚀</div>
-                    <h3>Digital Growth</h3>
-                    <p>Discover practical approaches to improve online visibility, audience engagement, content reach, and digital presence.</p>
-                </article>
-            </div>
-        </div>
-    </section>
+        <div class="section-title">
 
-    <section class="topics" id="topics">
-        <div class="container">
-            <div class="section-title">
-                <span class="section-kicker">Learn</span>
-                <h2>What You Can Learn</h2>
-                <p>Simple and practical digital marketing resources for beginners and growing professionals.</p>
-            </div>
+            <span class="section-kicker">
+                About
+            </span>
 
-            <div class="topic-list">
-                <article class="topic">
-                    <div class="topic-icon">📈</div>
-                    <div>
-                        <h3>On-Page SEO</h3>
-                        <p>Learn about title tags, meta descriptions, headings, URLs, image SEO, internal links, and content optimization.</p>
-                    </div>
-                </article>
+            <h2>
+                Practical Knowledge for Digital Growth
+            </h2>
 
-                <article class="topic">
-                    <div class="topic-icon">⚙️</div>
-                    <div>
-                        <h3>Technical SEO</h3>
-                        <p>Understand crawling, indexing, XML sitemaps, robots.txt, Core Web Vitals, structured data, and performance.</p>
-                    </div>
-                </article>
-
-                <article class="topic">
-                    <div class="topic-icon">🔗</div>
-                    <div>
-                        <h3>Off-Page SEO</h3>
-                        <p>Explore ethical approaches to link building, digital PR, content promotion, social platforms, and visibility.</p>
-                    </div>
-                </article>
-
-                <article class="topic">
-                    <div class="topic-icon">🤖</div>
-                    <div>
-                        <h3>AI in Digital Marketing</h3>
-                        <p>Discover how AI tools can support content research, customer communication, automation, and workflows.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta" id="contact">
-        <div class="container">
-            <h2>Let's Explore the Digital World 🚀</h2>
             <p>
-                Explore practical SEO and digital marketing resources and keep learning
-                about the technologies shaping the future of online business.
+                Simple explanations, useful strategies,
+                and modern digital insights.
             </p>
-            <a href="https://www.instagram.com/deepshikasaini21" class="btn">Get in Touch →</a>
+
         </div>
-    </section>
+
+
+        <div class="about-wrap">
+
+            <div class="about-badge">
+
+                <span class="big">
+                    01
+                </span>
+
+                <h3>
+                    Learn With Purpose
+                </h3>
+
+                <p>
+                    Turn digital marketing concepts into
+                    practical knowledge you can use.
+                </p>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p>
+                    Digital Deepshika focuses on sharing useful
+                    and easy-to-understand information about
+                    search engine optimization, digital marketing,
+                    content creation, and modern web technologies.
+                </p>
+
+                <p>
+                    The goal is to make digital marketing concepts
+                    easier to understand and provide practical ideas
+                    that can be applied to websites, content,
+                    and online businesses.
+                </p>
+
+                <p>
+                    From SEO basics to AI-powered tools and website
+                    optimization, Digital Deepshika brings together
+                    helpful resources for people interested in
+                    growing their digital skills and online presence.
+                </p>
+
+                <a href="about.html" class="btn">
+                    Read More About Me →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERTISE
+========================== -->
+
+<section id="expertise">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="section-kicker">
+                Expertise
+            </span>
+
+            <h2>
+                Digital Marketing & SEO Expertise
+            </h2>
+
+            <p>
+                Explore the key areas of digital marketing
+                and website growth covered here.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🔎
+                </div>
+
+                <h3>
+                    Search Engine Optimization
+                </h3>
+
+                <p>
+                    Learn about on-page SEO, technical SEO,
+                    keyword research, meta tags, internal linking,
+                    schema markup, and off-page SEO.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ✍️
+                </div>
+
+                <h3>
+                    Content Marketing
+                </h3>
+
+                <p>
+                    Discover content planning, keyword-focused
+                    writing, website content optimization,
+                    and useful content strategies.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    AI Tools & Technology
+                </h3>
+
+                <p>
+                    Explore AI tools, chatbots, automation,
+                    and emerging technologies that support
+                    modern marketing workflows.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Website Optimization
+                </h3>
+
+                <p>
+                    Learn how to improve website structure,
+                    user experience, performance, mobile usability,
+                    and search visibility.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🎯
+                </div>
+
+                <h3>
+                    Keyword Research
+                </h3>
+
+                <p>
+                    Understand search intent, keyword selection,
+                    long-tail keywords, keyword mapping,
+                    and search-focused content.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🚀
+                </div>
+
+                <h3>
+                    Digital Growth
+                </h3>
+
+                <p>
+                    Discover practical approaches to improve
+                    online visibility, audience engagement,
+                    content reach, and digital presence.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BLOG
+========================== -->
+
+<section class="blog-section" id="blog">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="section-kicker">
+                Blog
+            </span>
+
+            <h2>
+                Latest Digital Marketing Insights
+            </h2>
+
+            <p>
+                Explore practical articles about SEO,
+                digital marketing, AI tools, content strategy,
+                and website optimization.
+            </p>
+
+        </div>
+
+
+        <div class="blog-grid">
+
+
+            <!-- BLOG 1 -->
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    🔎
+                </div>
+
+                <div class="blog-content">
+
+                    <span class="blog-category">
+                        SEO
+                    </span>
+
+                    <h3>
+                        SEO Tips for Beginners
+                    </h3>
+
+                    <p>
+                        Learn simple SEO strategies, keyword research,
+                        on-page optimization, and techniques to improve
+                        website visibility.
+                    </p>
+
+                    <a
+                        href="blog-seo.html"
+                        class="read-more"
+                    >
+                        Read More →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- BLOG 2 -->
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    🤖
+                </div>
+
+                <div class="blog-content">
+
+                    <span class="blog-category">
+                        AI & Technology
+                    </span>
+
+                    <h3>
+                        AI Tools for Digital Marketing
+                    </h3>
+
+                    <p>
+                        Discover how AI tools can support content creation,
+                        marketing workflows, customer communication,
+                        and everyday digital tasks.
+                    </p>
+
+                    <a
+                        href="blog-ai-tools.html"
+                        class="read-more"
+                    >
+                        Read More →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- BLOG 3 -->
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    📈
+                </div>
+
+                <div class="blog-content">
+
+                    <span class="blog-category">
+                        Website SEO
+                    </span>
+
+                    <h3>
+                        How to Improve Website SEO
+                    </h3>
+
+                    <p>
+                        Explore practical ways to optimize website
+                        content, headings, meta tags, internal links,
+                        images, and technical SEO elements.
+                    </p>
+
+                    <a
+                        href="blog-website-seo.html"
+                        class="read-more"
+                    >
+                        Read More →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- BLOG 4 -->
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    ✍️
+                </div>
+
+                <div class="blog-content">
+
+                    <span class="blog-category">
+                        Content Marketing
+                    </span>
+
+                    <h3>
+                        Content Marketing Strategies
+                    </h3>
+
+                    <p>
+                        Learn how useful, search-focused content
+                        can help websites attract visitors,
+                        build visibility, and create a stronger
+                        online presence.
+                    </p>
+
+                    <a
+                        href="blog-content-marketing.html"
+                        class="read-more"
+                    >
+                        Read More →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- BLOG 5 -->
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    🎯
+                </div>
+
+                <div class="blog-content">
+
+                    <span class="blog-category">
+                        Keyword Research
+                    </span>
+
+                    <h3>
+                        Understanding Search Intent
+                    </h3>
+
+                    <p>
+                        Learn how informational, navigational,
+                        commercial, and transactional search intent
+                        can help create better SEO content.
+                    </p>
+
+                    <a
+                        href="blog-search-intent.html"
+                        class="read-more"
+                    >
+                        Read More →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- BLOG 6 -->
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    ⚡
+                </div>
+
+                <div class="blog-content">
+
+                    <span class="blog-category">
+                        Website Optimization
+                    </span>
+
+                    <h3>
+                        Website Optimization Basics
+                    </h3>
+
+                    <p>
+                        Explore website speed, mobile usability,
+                        page structure, user experience, and other
+                        important optimization fundamentals.
+                    </p>
+
+                    <a
+                        href="blog-website-optimization.html"
+                        class="read-more"
+                    >
+                        Read More →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================== -->
+
+<section class="cta" id="contact">
+
+    <div class="container">
+
+        <h2>
+            Let's Explore the Digital World 🚀
+        </h2>
+
+        <p>
+            Explore practical SEO and digital marketing resources
+            and keep learning about the technologies shaping
+            the future of online business.
+        </p>
+
+        <a
+            href="contact.html"
+            class="btn"
+        >
+            Get in Touch →
+        </a>
+
+    </div>
+
+</section>
+
 </main>
 
+
+<!-- =========================
+     FOOTER
+========================== -->
+
 <footer>
+
     <div class="container">
-        <p>© 2026 <strong>Digital Deepshika</strong>. All rights reserved.</p>
+
+        <p>
+            © 2026
+            <strong>Digital Deepshika</strong>.
+            All rights reserved.
+        </p>
+
     </div>
+
 </footer>
+
+
 </body>
 </html>
