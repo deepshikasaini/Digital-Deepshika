@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Digital Deepshika | SEO & Digital Marketing Professional</title>
+
+    <meta name="description"
+          content="Digital Deepshika is a digital marketing and SEO platform sharing practical insights on SEO, content marketing, AI tools, website optimization, and online growth.">
+
+    <meta name="keywords"
+          content="Digital Deepshika, SEO, digital marketing, SEO professional, content marketing, AI tools, website optimization, SEO tips, digital marketing strategies">
+
+    <meta name="author" content="Deepshika Saini">
+
+    <!-- Search Engine Instructions -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://digitaldeepshika.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+          content="Digital Deepshika | SEO & Digital Marketing Professional">
+
+    <meta property="og:description"
+          content="Explore SEO, digital marketing, content strategy, AI tools, and website optimization insights with Digital Deepshika.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url"
+          content="https://digitaldeepshika.com/">
+
+    <meta property="og:image"
+          content="https://digitaldeepshika.com/images/digital-deepshika.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Digital Deepshika | SEO & Digital Marketing">
+
+    <meta name="twitter:description"
+          content="Learn SEO, digital marketing, content strategy, AI tools, and website optimization with Digital Deepshika.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Schema Markup: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Deepshika Saini",
+      "url": "https://digitaldeepshika.com/",
+      "jobTitle": "SEO & Digital Marketing Professional",
+      "description": "Digital marketing and SEO professional sharing practical insights about SEO, content marketing, AI tools and website optimization.",
+      "knowsAbout": [
+        "Search Engine Optimization",
+        "Digital Marketing",
+        "Content Marketing",
+        "AI Tools",
+        "Website Optimization",
+        "Content Strategy"
+      ]
+    }
+    </script>
+
+    <!-- Schema Markup: Website -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Digital Deepshika",
+      "url": "https://digitaldeepshika.com/"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #222;
+            background: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            font-weight: 400;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 90px 0;
+            background: #f7f9fc;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            font-weight: 400;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 750px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #111;
+            color: #fff;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            color: #111;
+            border: 1px solid #111;
+        }
+
+        /* Sections */
+        section {
+            padding: 75px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* About */
+        .about-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            padding: 30px;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .service-card h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* Topics */
+        .topics {
+            background: #f7f9fc;
+        }
+
+        .topic-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .topic {
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+        }
+
+        .topic h3 {
+            margin-bottom: 7px;
+        }
+
+        .topic p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            background: #111;
+            color: #fff;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 15px auto 25px;
+            color: #ddd;
+        }
+
+        .cta .btn {
+            background: #fff;
+            color: #111;
+        }
+
+        /* Footer */
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-direction: column;
+                padding: 15px 0;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .topic-list {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 55px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+
+            <div class="logo">
+                Digital <span>Deepshika</span>
+            </div>
+
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <h1>
+                        Digital Deepshika:
+                        <span>SEO & Digital Marketing Insights</span>
+                    </h1>
+
+                    <p>
+                        Welcome to Digital Deepshika, a platform for practical
+                        SEO, digital marketing, content strategy, AI tools,
+                        and website optimization insights to help build a
+                        stronger online presence.
+                    </p>
+
+                    <a href="#expertise" class="btn">
+                        Explore Expertise
+                    </a>
+
+                    <a href="#about" class="btn secondary">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>About Digital Deepshika</h2>
+                    <p>
+                        Practical knowledge for better digital growth.
+                    </p>
+                </div>
+
+                <div class="about-content">
+
+                    <p>
+                        Digital Deepshika focuses on sharing useful and
+                        easy-to-understand information about search engine
+                        optimization, digital marketing, content creation,
+                        and modern web technologies.
+                    </p>
+
+                    <p>
+                        The goal is to make digital marketing concepts easier
+                        to understand and provide practical ideas that can be
+                        applied to websites, content, and online businesses.
+                    </p>
+
+                    <p>
+                        From SEO basics to AI-powered tools and website
+                        optimization, Digital Deepshika brings together
+                        helpful resources for people interested in growing
+                        their digital skills and online presence.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Expertise Section -->
+        <section id="expertise">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Digital Marketing & SEO Expertise</h2>
+
+                    <p>
+                        Explore key areas of digital marketing and website
+                        growth covered by Digital Deepshika.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <h3>Search Engine Optimization</h3>
+
+                        <p>
+                            Learn about on-page SEO, technical SEO,
+                            keyword research, meta tags, internal linking,
+                            schema markup, and off-page SEO strategies.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>Content Marketing</h3>
+
+                        <p>
+                            Discover practical content marketing ideas,
+                            content planning, keyword-focused writing,
+                            website content optimization, and useful
+                            content strategies.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>AI Tools & Technology</h3>
+
+                        <p>
+                            Explore AI tools, AI chatbots, automation,
+                            and emerging technologies that can support
+                            modern digital marketing and business growth.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>Website Optimization</h3>
+
+                        <p>
+                            Learn how to improve website structure,
+                            user experience, page performance, mobile
+                            usability, and search engine visibility.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>Keyword Research</h3>
+
+                        <p>
+                            Understand search intent, keyword selection,
+                            long-tail keywords, keyword mapping, and
+                            strategies for creating useful search-focused
+                            content.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>Digital Growth</h3>
+
+                        <p>
+                            Discover practical approaches to improve online
+                            visibility, audience engagement, content reach,
+                            and overall digital presence.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Topics Section -->
+        <section class="topics" id="topics">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>What You Can Learn</h2>
+
+                    <p>
+                        Simple and practical digital marketing resources
+                        for beginners and growing professionals.
+                    </p>
+
+                </div>
+
+
+                <div class="topic-list">
+
+                    <article class="topic">
+
+                        <h3>On-Page SEO</h3>
+
+                        <p>
+                            Learn about title tags, meta descriptions,
+                            headings, URLs, image SEO, internal links,
+                            and content optimization.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic">
+
+                        <h3>Technical SEO</h3>
+
+                        <p>
+                            Understand crawling, indexing, XML sitemaps,
+                            robots.txt, Core Web Vitals, structured data,
+                            and website performance.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic">
+
+                        <h3>Off-Page SEO</h3>
+
+                        <p>
+                            Explore ethical approaches to link building,
+                            digital PR, content promotion, social platforms,
+                            and online visibility.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic">
+
+                        <h3>AI in Digital Marketing</h3>
+
+                        <p>
+                            Discover how AI tools can support content
+                            research, customer communication, automation,
+                            and digital marketing workflows.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta" id="contact">
+
+            <div class="container">
+
+                <h2>Let's Explore the Digital World</h2>
+
+                <p>
+                    Explore practical SEO and digital marketing resources
+                    and keep learning about the technologies shaping the
+                    future of online business.
+                </p>
+
+                <a href="mailto:your-email@example.com" class="btn">
+                    Get in Touch
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Digital Deepshika. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
