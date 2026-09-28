@@ -1,0 +1,929 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore AI Digital Solutions including AI tools, AI chatbots, business automation, digital analytics, AI marketing and digital transformation solutions.">
+
+    <meta name="keywords"
+        content="AI Digital Solutions, AI solutions, AI tools, AI chatbot, business automation, digital transformation, AI marketing, AI analytics">
+
+    <meta name="author" content="AI Digital Solutions">
+
+    <meta name="robots" content="index, follow">
+
+    <title>AI Solutions | AI Digital Solutions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #f7f9ff;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVBAR */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #e8ebf4;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 25px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: 800;
+            color: #5b4bdb;
+        }
+
+        .logo span {
+            color: #16a6a1;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #4b5568;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #5b4bdb;
+        }
+
+        .active {
+            color: #5b4bdb !important;
+        }
+
+        .nav-button {
+            background: #5b4bdb;
+            color: white !important;
+            padding: 10px 18px;
+            border-radius: 25px;
+        }
+
+        .nav-button:hover {
+            background: #4636c4;
+        }
+
+        /* HERO */
+
+        .page-hero {
+            text-align: center;
+            padding: 95px 25px 80px;
+
+            background:
+                radial-gradient(circle at top left,
+                    rgba(91, 75, 219, 0.12),
+                    transparent 35%),
+                radial-gradient(circle at top right,
+                    rgba(22, 166, 161, 0.12),
+                    transparent 35%);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 30px;
+
+            background: #eeecff;
+            color: #5748d5;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            margin-bottom: 20px;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(40px, 5vw, 60px);
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            margin-bottom: 20px;
+        }
+
+        .page-hero h1 span {
+            color: #5b4bdb;
+        }
+
+        .page-hero p {
+            max-width: 720px;
+            margin: auto;
+
+            font-size: 17px;
+            color: #687387;
+        }
+
+        /* MAIN */
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: auto;
+            color: #687387;
+        }
+
+        /* SOLUTION GRID */
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .solution-card {
+            background: white;
+            border: 1px solid #e7e9f2;
+
+            padding: 32px;
+
+            border-radius: 22px;
+
+            transition: 0.3s;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-card::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 4px;
+
+            background: linear-gradient(90deg, #5b4bdb, #16a6a1);
+        }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 20px 50px rgba(40, 50, 100, 0.12);
+        }
+
+        .solution-icon {
+            width: 62px;
+            height: 62px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #eeecff;
+
+            border-radius: 17px;
+
+            font-size: 28px;
+
+            margin-bottom: 22px;
+        }
+
+        .solution-card h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .solution-card p {
+            color: #687387;
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .learn-more {
+            color: #5b4bdb;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .learn-more:hover {
+            color: #16a6a1;
+        }
+
+        /* FEATURE SECTION */
+
+        .feature-section {
+            background: white;
+        }
+
+        .feature {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+        .feature-content h2 {
+            font-size: 40px;
+            line-height: 1.2;
+
+            margin-bottom: 20px;
+        }
+
+        .feature-content p {
+            color: #687387;
+
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .feature-list li {
+            margin-bottom: 15px;
+
+            font-weight: 600;
+        }
+
+        .feature-list li::before {
+            content: "✓";
+
+            color: #16a6a1;
+
+            font-weight: 800;
+
+            margin-right: 10px;
+        }
+
+        .feature-box {
+            background: linear-gradient(
+                145deg,
+                #5b4bdb,
+                #16a6a1
+            );
+
+            color: white;
+
+            padding: 45px;
+
+            border-radius: 28px;
+
+            box-shadow:
+                0 25px 60px rgba(91, 75, 219, 0.2);
+        }
+
+        .feature-box h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .feature-box p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* CTA */
+
+        .cta-section {
+            padding: 80px 25px;
+        }
+
+        .cta {
+            max-width: 1050px;
+
+            margin: auto;
+
+            padding: 65px 35px;
+
+            text-align: center;
+
+            background: #171b35;
+
+            color: white;
+
+            border-radius: 30px;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 650px;
+
+            margin: auto;
+
+            color: #c4c9d9;
+
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+
+            background: #5b4bdb;
+
+            color: white;
+
+            padding: 14px 25px;
+
+            border-radius: 30px;
+
+            font-weight: 700;
+
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #16a6a1;
+
+            transform: translateY(-3px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #111426;
+
+            color: white;
+
+            padding: 45px 25px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 30px;
+        }
+
+        .footer-logo {
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        .footer-logo span {
+            color: #16a6a1;
+        }
+
+        .footer-text {
+            color: #aab0c2;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #c9cede;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+
+            .solution-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .feature {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .solution-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero {
+                padding-top: 65px;
+            }
+
+            .section-title h2,
+            .feature-content h2,
+            .cta h2 {
+                font-size: 30px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <!-- WebSite Schema -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "AI Solutions",
+        "description": "Explore AI-powered digital solutions including AI tools, chatbots, business automation and digital transformation.",
+        "url": "https://your-domain.com/solutions.html"
+    }
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <div class="navbar">
+
+            <a href="index.html" class="logo">
+                AI <span>Digital Solutions</span>
+            </a>
+
+            <nav>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="solutions.html" class="active">
+                    Solutions
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="contact.html" class="nav-button">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- PAGE HERO -->
+
+    <section class="page-hero">
+
+        <span class="badge">
+            💡 AI & Digital Innovation
+        </span>
+
+        <h1>
+            Explore Our
+            <span>AI Solutions</span>
+        </h1>
+
+        <p>
+            Discover practical AI-powered solutions designed to help
+            businesses automate processes, improve customer experiences,
+            and build smarter digital operations.
+        </p>
+
+    </section>
+
+
+    <!-- SOLUTIONS -->
+
+    <main>
+
+        <section>
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>
+                        Smart Solutions for Modern Businesses
+                    </h2>
+
+                    <p>
+                        From intelligent chatbots to business automation,
+                        explore technologies that can support digital growth
+                        and improve everyday business operations.
+                    </p>
+
+                </div>
+
+
+                <div class="solution-grid">
+
+
+                    <!-- CARD 1 -->
+
+                    <article class="solution-card">
+
+                        <div class="solution-icon">
+                            🤖
+                        </div>
+
+                        <h3>
+                            AI Tools
+                        </h3>
+
+                        <p>
+                            Explore AI-powered tools that can assist with
+                            content creation, research, productivity,
+                            communication and business tasks.
+                        </p>
+
+                        <a href="#" class="learn-more">
+                            Explore AI Tools →
+                        </a>
+
+                    </article>
+
+
+                    <!-- CARD 2 -->
+
+                    <article class="solution-card">
+
+                        <div class="solution-icon">
+                            💬
+                        </div>
+
+                        <h3>
+                            AI Chatbots
+                        </h3>
+
+                        <p>
+                            Use intelligent chatbots to answer visitor
+                            questions, provide information and create
+                            interactive website experiences.
+                        </p>
+
+                        <a href="#" class="learn-more">
+                            Explore Chatbots →
+                        </a>
+
+                    </article>
+
+
+                    <!-- CARD 3 -->
+
+                    <article class="solution-card">
+
+                        <div class="solution-icon">
+                            ⚙️
+                        </div>
+
+                        <h3>
+                            Business Automation
+                        </h3>
+
+                        <p>
+                            Simplify repetitive workflows and reduce manual
+                            tasks with smart automation technologies.
+                        </p>
+
+                        <a href="#" class="learn-more">
+                            Explore Automation →
+                        </a>
+
+                    </article>
+
+
+                    <!-- CARD 4 -->
+
+                    <article class="solution-card">
+
+                        <div class="solution-icon">
+                            📊
+                        </div>
+
+                        <h3>
+                            AI Analytics
+                        </h3>
+
+                        <p>
+                            Use data and AI-powered insights to understand
+                            digital performance and identify improvement
+                            opportunities.
+                        </p>
+
+                        <a href="#" class="learn-more">
+                            Explore Analytics →
+                        </a>
+
+                    </article>
+
+
+                    <!-- CARD 5 -->
+
+                    <article class="solution-card">
+
+                        <div class="solution-icon">
+                            📣
+                        </div>
+
+                        <h3>
+                            AI Marketing
+                        </h3>
+
+                        <p>
+                            Explore AI-assisted marketing solutions for
+                            content planning, customer engagement and
+                            digital communication.
+                        </p>
+
+                        <a href="#" class="learn-more">
+                            Explore Marketing →
+                        </a>
+
+                    </article>
+
+
+                    <!-- CARD 6 -->
+
+                    <article class="solution-card">
+
+                        <div class="solution-icon">
+                            🌐
+                        </div>
+
+                        <h3>
+                            Digital Transformation
+                        </h3>
+
+                        <p>
+                            Discover modern technologies that can help
+                            businesses create connected and efficient
+                            digital experiences.
+                        </p>
+
+                        <a href="#" class="learn-more">
+                            Learn More →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURE -->
+
+        <section class="feature-section">
+
+            <div class="container">
+
+                <div class="feature">
+
+
+                    <div class="feature-content">
+
+                        <span class="badge">
+                            Why AI Solutions?
+                        </span>
+
+                        <h2>
+                            Turn Everyday Challenges Into Smarter Digital Processes
+                        </h2>
+
+                        <p>
+                            Artificial intelligence can support businesses
+                            across multiple areas, from customer communication
+                            and automation to data analysis and digital marketing.
+                        </p>
+
+                        <p>
+                            The right technology can help teams reduce repetitive
+                            work while creating more useful experiences for
+                            customers and website visitors.
+                        </p>
+
+
+                        <ul class="feature-list">
+
+                            <li>
+                                Automate repetitive tasks
+                            </li>
+
+                            <li>
+                                Improve customer communication
+                            </li>
+
+                            <li>
+                                Support faster workflows
+                            </li>
+
+                            <li>
+                                Create smarter digital experiences
+                            </li>
+
+                            <li>
+                                Discover data-driven insights
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="feature-box">
+
+                        <h3>
+                            AI Meets Digital Innovation
+                        </h3>
+
+                        <p>
+                            AI Digital Solutions brings together artificial
+                            intelligence, automation and digital technologies
+                            to help businesses understand and explore new
+                            possibilities in the modern digital environment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="cta-section">
+
+            <div class="cta">
+
+                <h2>
+                    Explore the Future of AI
+                </h2>
+
+                <p>
+                    Learn how AI and digital technologies can support
+                    productivity, automation, customer engagement and
+                    business innovation.
+                </p>
+
+                <a href="contact.html" class="cta-button">
+                    Get Started →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="footer-logo">
+                    AI <span>Digital Solutions</span>
+                </div>
+
+                <p class="footer-text">
+                    Smart AI and digital solutions for modern businesses.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="solutions.html">
+                    Solutions
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
