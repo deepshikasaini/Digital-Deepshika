@@ -1,534 +1,87 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<title>SEO & Digital Marketing Blogs | Digital Deepshika</title>
+    <title>AI & Digital Technology Blog | AI Digital Solutions</title>
 
-<meta name="description"
-      content="Read SEO, digital marketing, content strategy, website optimization and online marketing insights from Digital Deepshika.">
+    <meta name="description" content="Read AI, automation, chatbots, digital transformation and technology articles on the AI Digital Solutions blog.">
 
-<meta name="keywords"
-      content="SEO blogs, digital marketing blogs, SEO tips, content marketing, website optimization, Digital Deepshika">
+    <meta name="keywords" content="AI blog, artificial intelligence, AI tools, AI chatbot, business automation, digital transformation, technology blog">
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    <meta name="author" content="AI Digital Solutions">
 
-    html {
-        scroll-behavior: smooth;
-    }
+    <meta name="robots" content="index, follow">
 
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background: #f7f8fc;
-        color: #20233a;
-        line-height: 1.6;
-    }
+    <link rel="canonical" href="https://your-domain.com/blog.html">
 
-    /* NAVBAR */
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    nav {
-        background: #ffffff;
-        padding: 18px 8%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 2px 15px rgba(0,0,0,0.06);
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    .logo {
-        font-size: 25px;
-        font-weight: 800;
-        color: #6c4df6;
-        text-decoration: none;
-    }
+    <style>
 
-    .nav-links {
-        display: flex;
-        gap: 28px;
-        list-style: none;
-    }
-
-    .nav-links a {
-        text-decoration: none;
-        color: #33364d;
-        font-weight: 600;
-        transition: 0.3s;
-    }
-
-    .nav-links a:hover,
-    .nav-links .active {
-        color: #6c4df6;
-    }
-
-    /* HERO */
-
-    .blog-hero {
-        padding: 90px 8% 70px;
-        text-align: center;
-        background: linear-gradient(135deg, #f1edff, #ffffff);
-    }
-
-    .blog-hero span {
-        display: inline-block;
-        color: #6c4df6;
-        background: #ebe6ff;
-        padding: 8px 18px;
-        border-radius: 30px;
-        font-size: 14px;
-        font-weight: 700;
-        margin-bottom: 18px;
-    }
-
-    .blog-hero h1 {
-        font-size: 52px;
-        line-height: 1.15;
-        margin-bottom: 20px;
-        color: #20233a;
-    }
-
-    .blog-hero h1 strong {
-        color: #6c4df6;
-    }
-
-    .blog-hero p {
-        max-width: 700px;
-        margin: auto;
-        color: #666b80;
-        font-size: 18px;
-    }
-
-    /* BLOG SECTION */
-
-    .blogs-section {
-        padding: 80px 8%;
-    }
-
-    .section-heading {
-        text-align: center;
-        margin-bottom: 45px;
-    }
-
-    .section-heading h2 {
-        font-size: 38px;
-        margin-bottom: 10px;
-    }
-
-    .section-heading p {
-        color: #70758a;
-    }
-
-    /* BLOG GRID */
-
-    .blog-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    .blog-card {
-        background: #ffffff;
-        border-radius: 18px;
-        overflow: hidden;
-        box-shadow: 0 8px 30px rgba(30, 30, 60, 0.08);
-        transition: 0.35s ease;
-        border: 1px solid #eeeeF5;
-    }
-
-    .blog-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 40px rgba(30, 30, 60, 0.14);
-    }
-
-    /* BLOG IMAGE */
-
-    .blog-image {
-        height: 210px;
-        overflow: hidden;
-        background: linear-gradient(135deg, #7657ff, #a991ff);
-    }
-
-    .blog-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: 0.4s;
-    }
-
-    .blog-card:hover .blog-image img {
-        transform: scale(1.06);
-    }
-
-    /* BLOG CONTENT */
-
-    .blog-content {
-        padding: 25px;
-    }
-
-    .blog-category {
-        display: inline-block;
-        color: #6c4df6;
-        background: #f0edff;
-        padding: 5px 12px;
-        border-radius: 20px;
-        font-size: 12px;
-        font-weight: 700;
-        margin-bottom: 13px;
-    }
-
-    .blog-content h3 {
-        font-size: 21px;
-        line-height: 1.35;
-        margin-bottom: 12px;
-    }
-
-    .blog-content h3 a {
-        color: #20233a;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    .blog-content h3 a:hover {
-        color: #6c4df6;
-    }
-
-    .blog-content p {
-        color: #70758a;
-        font-size: 15px;
-        margin-bottom: 18px;
-    }
-
-    .read-more {
-        text-decoration: none;
-        color: #6c4df6;
-        font-weight: 700;
-        font-size: 14px;
-    }
-
-    .read-more:hover {
-        text-decoration: underline;
-    }
-
-    /* ADD BLOG INFO */
-
-    .add-blog {
-        max-width: 900px;
-        margin: 70px auto 0;
-        padding: 30px;
-        border-radius: 18px;
-        background: #ffffff;
-        border: 2px dashed #c9c0ff;
-        text-align: center;
-    }
-
-    .add-blog h3 {
-        font-size: 23px;
-        margin-bottom: 10px;
-    }
-
-    .add-blog p {
-        color: #70758a;
-    }
-
-    .add-blog code {
-        display: inline-block;
-        margin-top: 15px;
-        background: #f4f2ff;
-        color: #5b42d8;
-        padding: 10px 16px;
-        border-radius: 8px;
-    }
-
-    /* FOOTER */
-
-    footer {
-        margin-top: 40px;
-        background: #20233a;
-        color: #ffffff;
-        text-align: center;
-        padding: 35px 20px;
-    }
-
-    footer p {
-        color: #c9cbd8;
-        margin-top: 8px;
-    }
-
-    /* RESPONSIVE */
-
-    @media (max-width: 950px) {
-        .blog-grid {
-            grid-template-columns: repeat(2, 1fr);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .blog-hero h1 {
-            font-size: 42px;
+        html {
+            scroll-behavior: smooth;
         }
-    }
 
-    @media (max-width: 650px) {
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f7f9fc;
+            color: #172033;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        header {
+            background: rgba(255,255,255,0.96);
+            border-bottom: 1px solid #e8edf5;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar {
+            min-height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: 800;
+            color: #2563eb;
+            letter-spacing: -0.5px;
+        }
 
         nav {
-            padding: 15px 5%;
-            flex-direction: column;
-            gap: 15px;
+            display: flex;
+            align-items: center;
+            gap: 28px;
         }
 
-        .nav-links {
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .blog-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .blog-hero {
-            padding: 65px 6%;
-        }
-
-        .blog-hero h1 {
-            font-size: 35px;
-        }
-
-        .blogs-section {
-            padding: 60px 6%;
-        }
-    }
-</style>
-```
-
-</head>
-
-<body>
-
-```
-<!-- NAVIGATION -->
-
-<nav>
-    <a href="index.html" class="logo">Digital Deepshika</a>
-
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="expertise.html">Expertise</a></li>
-        <li><a href="blogs.html" class="active">Blogs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-
-<!-- BLOG HERO -->
-
-<section class="blog-hero">
-
-    <span>MY BLOG</span>
-
-    <h1>
-        Insights, Ideas & <strong>SEO Knowledge</strong>
-    </h1>
-
-    <p>
-        Explore practical insights about SEO, digital marketing,
-        content strategy, website optimization and online growth.
-    </p>
-
-</section>
-
-
-<!-- BLOGS -->
-
-<section class="blogs-section">
-
-    <div class="section-heading">
-
-        <h2>Latest Blogs</h2>
-
-        <p>
-            Learn something new and discover practical digital marketing insights.
-        </p>
-
-    </div>
-
-
-    <div class="blog-grid">
-
-
-        <!-- ==========================================
-             BLOG 1
-             COPY THIS CARD TO ADD A NEW BLOG
-        =========================================== -->
-
-        <article class="blog-card">
-
-            <div class="blog-image">
-
-                <!-- Replace image URL with your own image -->
-                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80"
-                     alt="SEO and digital marketing">
-
-            </div>
-
-            <div class="blog-content">
-
-                <span class="blog-category">
-                    SEO
-                </span>
-
-                <h3>
-                    <a href="blog-seo-basics.html">
-                        A Beginner's Guide to SEO
-                    </a>
-                </h3>
-
-                <p>
-                    Learn the basic concepts of SEO and discover how
-                    search engine optimization can improve website visibility.
-                </p>
-
-                <a href="blog-seo-basics.html" class="read-more">
-                    Read Article →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- ==========================================
-             BLOG 2
-        =========================================== -->
-
-        <article class="blog-card">
-
-            <div class="blog-image">
-
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
-                     alt="Digital marketing analytics">
-
-            </div>
-
-            <div class="blog-content">
-
-                <span class="blog-category">
-                    Digital Marketing
-                </span>
-
-                <h3>
-                    <a href="blog-digital-marketing.html">
-                        How Digital Marketing Helps Businesses Grow
-                    </a>
-                </h3>
-
-                <p>
-                    Explore practical digital marketing strategies that
-                    businesses can use to reach customers and build their presence.
-                </p>
-
-                <a href="blog-digital-marketing.html" class="read-more">
-                    Read Article →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- ==========================================
-             BLOG 3
-        =========================================== -->
-
-        <article class="blog-card">
-
-            <div class="blog-image">
-
-                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80"
-                     alt="Content marketing strategy">
-
-            </div>
-
-            <div class="blog-content">
-
-                <span class="blog-category">
-                    Content Strategy
-                </span>
-
-                <h3>
-                    <a href="blog-content-strategy.html">
-                        Building an Effective Content Strategy
-                    </a>
-                </h3>
-
-                <p>
-                    Understand how useful and consistent content can help
-                    websites attract visitors and build long-term visibility.
-                </p>
-
-                <a href="blog-content-strategy.html" class="read-more">
-                    Read Article →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- ==========================================
-             ADD MORE BLOGS BELOW
-        =========================================== -->
-
-    </div>
-
-
-    <!-- ADD BLOG INFORMATION -->
-
-    <div class="add-blog">
-
-        <h3>Want to Add a New Blog?</h3>
-
-        <p>
-            Simply copy any blog card above, paste it below,
-            and change the title, image, category, description and link.
-        </p>
-
-        <code>
-            &lt;article class="blog-card"&gt; ... &lt;/article&gt;
-        </code>
-
-    </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <h3>Digital Deepshika</h3>
-
-    <p>
-        SEO • Digital Marketing • Content Strategy • Website Optimization
-    </p>
-
-    <p>
-        © 2026 Digital Deepshika. All Rights Reserved.
-    </p>
-
-</footer>
-```
-
-</body>
-</html>
+        nav a {
+            color: #4b5563;
+            font-size: 14px;
+            font-weight
